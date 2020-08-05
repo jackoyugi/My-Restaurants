@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.widget.TextView;
 
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
@@ -12,6 +11,9 @@ import org.robolectric.RobolectricTestRunner;
 import org.robolectric.shadows.ShadowActivity;
 
 //import static org.junit.Assert.assertTrue;
+import co.ke.biofit.myrestaurants.ui.MainActivity;
+import co.ke.biofit.myrestaurants.ui.RestaurantListActivity;
+
 import static junit.framework.TestCase.assertTrue;
 
 

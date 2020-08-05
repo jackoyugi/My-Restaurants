@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="co.ke.biofit.myrestaurants">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -9,15 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".ui.RestaurantDetailActivity"></activity>
+        <activity android:name=".ui.RestaurantDetailFragment"
+            tools:ignore="Instantiatable"></activity>
         <activity
-            android:name=".RestaurantsActivity"
+            android:name="co.ke.biofit.myrestaurants.ui.RestaurantListActivity"
             android:label="@string/title_activity_restaurants">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="co.ke.biofit.myrestaurants.MainActivity">
+                android:value="co.ke.biofit.myrestaurants.ui.MainActivity">
             </meta-data>
         </activity>
-        <activity android:name=".MainActivity"
+        <activity android:name="co.ke.biofit.myrestaurants.ui.MainActivity"
             android:theme="@style/NoActionBarTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
